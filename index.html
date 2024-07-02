@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissor, Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="heading">Build a Rock, Paper, Scissor, Game</h1>
+    <main>
+        <Details id="Detail-section">
+            <summary>Rules For Game</summary>
+
+            <p>You will be playing against the computer.</p>
+            <p>You can choose between Rock, Paper, and Scissors.</p>
+            <p>The first one to three points wins.</p>
+
+            <p>Here are the rules to getting a point in the game:</p>
+            <ul>
+                <li>Rock beats Scissors</li>
+
+                <li>Scissors beats Paper</li>
+                <li>Paper beats Rock</li>
+            </ul>
+            <p>
+                If the player and computer choose the same option (Ex. Paper and
+                Paper), then no one gets the point.
+            </p>
+        </Details>
+    </main>
+    <div class="score-container">
+        <h3>PlayerScore = <span id="span-player-score">0</span></h3>
+        <h3>ComputerScore = <span id="span-computer-score">0</span></h3>
+    </div>
+    <div id="choose-option">
+        <h3 class="option">Choose an Option:</h3>
+        <button id="Rock-btn">Rock</button>
+        <button id="Scissors-btn">Scissors</button>
+        <button id="paper-btn">Paper</button>
+    </div>
+    <div class="final-result">
+        <p id="result-container"></p>
+        <p id="winner-container"></p>
+        <button id="resetgame">PlayAgian?</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
